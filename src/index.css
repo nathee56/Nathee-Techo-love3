@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/30 backdrop-blur-md border border-white/50 shadow-[0_8px_32px_0_rgba(255,182,193,0.3)] rounded-3xl;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  /* Pastel warm gradient */
+  background: linear-gradient(135deg, #FFDAB9 0%, #FFFACD 50%, #AEC6CF 100%);
+  background-attachment: fixed;
+  overflow: hidden; /* No scrolling */
+  font-family: 'Kanit', 'Prompt', sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
